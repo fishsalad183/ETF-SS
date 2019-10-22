@@ -1,0 +1,40 @@
+.global t, y, _start
+
+.rodata
+	x: .long 3331024
+	y: .char 0xBa
+
+.bss
+c: .skip 3
+    .skip 1, 1
+    .skip 2, 2
+     .skip 3, 3
+
+.data
+    a: .word 0x1234
+    t: .long 0x12345678
+    expr: .long d+b
+    r: .char 12
+    b: .word 55, 0xddd, 0x1FF
+	d:	.char 255
+
+.align 3, 0xAA
+
+.text
+_start:
+    call nesto123
+    call r
+    add r1, r2
+    cmp r1, 100
+    diveq r1, 10
+    call printf
+label1:
+    movgt r2, r3
+    jmp _start
+    diveq r5[y], psw
+    ret
+
+.end
+
+blablabla
+tructruc

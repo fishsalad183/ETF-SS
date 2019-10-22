@@ -1,0 +1,107 @@
+SYMBOL TABLE
+
+index	name		section	offset	scope
+-----	----		-------	------	-----
+0	.rodata		RODATA	0	local
+1	x		RODATA	0	local
+2	y		RODATA	4	global
+3	.bss		BSS	0	local
+4	c		BSS	0	local
+5	.data		DATA	0	local
+6	a		DATA	0	local
+7	t		DATA	2	global
+8	expr		DATA	6	local
+9	r		DATA	10	local
+10	b		DATA	11	local
+11	d		DATA	17	local
+12	.text		TEXT	0	local
+13	_start		TEXT	0	global
+14	label1		TEXT	22	local
+15	nesto123		?	?	global
+16	printf		?	?	global
+
+
+
+RODATA section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+RODATA
+
+0	00 32 D3 D0 	00000000 00110010 11010011 11010000 
+4	BA 		10111010 
+
+
+
+DATA section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+DATA
+
+0	12 34 		00010010 00110100 
+2	12 34 56 78 	00010010 00110100 01010110 01111000 
+6	00 00 00 1C 	00000000 00000000 00000000 00011100 
+A	0C 		00001100 
+B	00 37 		00000000 00110111 
+D	0D DD 		00001101 11011101 
+F	01 FF 		00000001 11111111 
+11	FF 		11111111 
+12	AA AA AA AA AA AA 	10101010 10101010 10101010 10101010 10101010 10101010 
+
+
+
+TEXT section relocation table
+
+offset		type		index
+------		----		-----
+00000000	R_386_PC32	15
+00000004	R_386_PC32	9
+00000012	R_386_PC32	16
+0000001C	R_386_32	2
+
+
+
+TEXT
+
+0	EC 1F ?? ?? 	11101100 00011111 ???????? ???????? 
+4	EC 1F ?? ?? 	11101100 00011111 ???????? ???????? 
+8	C1 2A 		11000001 00101010 
+A	D1 20 00 64 	11010001 00100000 00000000 01100100 
+E	0D 20 00 0A 	00001101 00100000 00000000 00001010 
+12	EC 1F ?? ?? 	11101100 00011111 ???????? ???????? 
+16	B5 4B 		10110101 01001011 
+18	C1 E0 FF E4 	11000001 11100000 11111111 11100100 
+1C	0F A7 ?? ?? 	00001111 10100111 ???????? ???????? 
+20	EB E0 00 00 	11101011 11100000 00000000 00000000 
+
+
+
+BSS section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+BSS
+
+0	00 00 00 		00000000 00000000 00000000 
+3	01 		00000001 
+4	02 02 		00000010 00000010 
+6	03 03 03 		00000011 00000011 00000011 
+
+
+
+section	address (hex)	size	[FFFFFFFF as address means there is no section]
+-------	-------------		----
+RODATA	FF		5
+DATA	10D		24
+TEXT	125		36
+BSS	104		9

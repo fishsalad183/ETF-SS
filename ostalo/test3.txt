@@ -1,0 +1,15 @@
+.bss
+lab1:	.char 0x12
+	.skip 8, 5
+lab3:	.align 2, 0xF
+
+.text
+	mov r1, 0xABCD
+	test r1, r2
+	orgt r4, r7
+
+.data
+	.long lab3-1
+	.word lab1+127
+
+.end

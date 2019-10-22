@@ -1,0 +1,66 @@
+SYMBOL TABLE
+
+index	name		section	offset	scope
+-----	----		-------	------	-----
+0	.text		TEXT	0	local
+1	printf		?	?	global
+
+
+
+RODATA section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+RODATA
+
+
+
+
+DATA section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+DATA
+
+
+
+
+TEXT section relocation table
+
+offset		type		index
+------		----		-----
+00000000	R_386_PC32	1
+
+
+
+TEXT
+
+0	EC 1F ?? ?? 	11101100 00011111 ???????? ???????? 
+4	F5 2A 		11110101 00101010 
+
+
+
+BSS section relocation table
+
+offset		type		index
+------		----		-----
+
+
+
+BSS
+
+
+
+
+section	address (hex)	size	[FFFFFFFF as address means there is no section]
+-------	-------------		----
+RODATA	FFFFFFFF		0
+DATA	FFFFFFFF		0
+TEXT	FF		6
+BSS	FFFFFFFF		0

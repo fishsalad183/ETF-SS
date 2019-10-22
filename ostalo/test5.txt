@@ -1,0 +1,9 @@
+.data
+	.char 5
+	.align 4, 0xF
+blup:	.word 0x1234
+.text
+	call printf
+	mov r1, r2
+	addgt blup, r5
+.end

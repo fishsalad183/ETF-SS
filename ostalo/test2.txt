@@ -1,0 +1,30 @@
+.rodata
+	a: .long 0x1EDCBA98
+	b: .word 1024
+
+.global a, e
+.data
+	c: .char 15
+	d: .char 0xa
+	e: .word c-d
+.align 3, 0xFF
+
+.text
+	add r2, r1
+	mov r1, 0x300
+	cmp r5[255], r1
+	mulne &b, r6
+	moval r3, *20
+	test r4[d], psw
+	jmpgt label1
+	diveq $e, r0
+label1:
+	subne r7, r1
+
+.bss
+	.skip 1, 0xf
+	.skip 2, 0xE
+	.skip 3, 0xd
+	.align 3
+
+.end

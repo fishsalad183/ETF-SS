@@ -1,0 +1,4 @@
+.text
+	call printf
+	mov r1, r2
+.end
