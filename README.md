@@ -1,2 +1,5 @@
-# ETF-SS
-Projekat iz Sistemskog softvera, školska godina 2017/18. Zadatak za 25 bodova (samo asembler, bez emulatora).
+# ETF-SS / System Software project
+
+Homework project for System Software course, academic year 2017/18: a two-pass assembler.
+
+Tech: C++.
